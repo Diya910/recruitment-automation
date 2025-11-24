@@ -1,0 +1,70 @@
+{
+    "scenarios": [
+        {
+            "id": "customer_assist_1",
+            "title": "Dealership Account Assistance",
+            "description": "Handle a dealership customer inquiry about account details, confirm their identity, and transfer to the appropriate support team for resolution.",
+            "difficulty": "medium",
+            "duration": 15,
+            "topics": ["customer-service", "identity-verification", "dealership-support", "call-transfer"],
+            "requirements": [
+                "Strong communication and active listening skills",
+                "Ability to verify customer and dealership details",
+                "Knowledge of internal support structure and escalation process"
+            ],
+            "questions": [
+                { "id": "q1", "question": "How would you greet the customer and establish rapport at the start of the call?" },
+                { "id": "q2", "question": "What steps would you take to confirm the customer's name and dealership information?" },
+                { "id": "q3", "question": "How do you handle cases where the spelling of names or dealership details is unclear?" },
+                { "id": "q4", "question": "At what point should you escalate or transfer the call to a specialized support team?" },
+                { "id": "q5", "question": "How would you explain the reason for transferring the call to another department?" },
+                { "id": "q6", "question": "What best practices ensure a smooth handoff between agents and departments?" },
+                { "id": "q7", "question": "How would you close the conversation politely after the transfer is complete?" }
+            ]
+        },
+        {
+            "id": "customer_assist_2",
+            "title": "Customer Information Verification",
+            "description": "Assist a customer by confirming their identity and dealership details before providing or escalating account-related information.",
+            "difficulty": "easy",
+            "duration": 10,
+            "topics": ["customer-service", "identity-verification", "account-assistance"],
+            "requirements": [
+                "Attention to detail when recording customer information",
+                "Ability to manage sensitive customer data securely",
+                "Clear communication when verifying names and business details"
+            ],
+            "questions": [
+                { "id": "q1", "question": "How would you politely request the customer to spell their first and last name?" },
+                { "id": "q2", "question": "What approach would you take if the customer mishears or misunderstands your spelling confirmation?" },
+                { "id": "q3", "question": "How would you verify the dealership name and match it against company records?" },
+                { "id": "q4", "question": "What steps ensure that the customer feels reassured during identity verification?" },
+                { "id": "q5", "question": "How would you handle situations where dealership details do not match records?" },
+                { "id": "q6", "question": "How would you maintain professionalism and patience if the customer becomes frustrated during verification?" },
+                { "id": "q7", "question": "What compliance and data protection considerations should you keep in mind during verification?" }
+            ]
+        },
+        {
+            "id": "customer_assist_3",
+            "title": "Call Transfer and Escalation",
+            "description": "Transfer a customer to the correct department while ensuring a smooth transition and maintaining a positive customer experience.",
+            "difficulty": "medium",
+            "duration": 12,
+            "topics": ["call-transfer", "customer-escalation", "support-handoff"],
+            "requirements": [
+                "Knowledge of support team roles and responsibilities",
+                "Ability to communicate transfer reasons clearly",
+                "Skill in maintaining customer trust during handoff"
+            ],
+            "questions": [
+                { "id": "q1", "question": "What are the key signs that a call should be transferred to another department?" },
+                { "id": "q2", "question": "How would you explain the need for transfer without making the customer feel dismissed?" },
+                { "id": "q3", "question": "What information should you provide to the receiving agent to ensure continuity?" },
+                { "id": "q4", "question": "How would you keep the customer engaged while placing them briefly on hold?" },
+                { "id": "q5", "question": "What best practices reduce friction during a handoff between departments?" },
+                { "id": "q6", "question": "How would you confirm that the customer has been successfully connected to the right person?" },
+                { "id": "q7", "question": "How would you close your part of the interaction after transfer, leaving a positive impression?" }
+            ]
+        }
+    ]
+}

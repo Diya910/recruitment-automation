@@ -1,0 +1,153 @@
+{
+    "scenarios": [
+        {
+            "id": "customer_service_internet_upgrade",
+            "title": "Internet Service Upgrade",
+            "description": "Handle a customer inquiry about upgrading their internet service. Provide information about available upgrades, answer questions about speeds, and process the upgrade request.",
+            "difficulty": "medium",
+            "duration": 15,
+            "topics": ["customer-service", "internet-services", "upgrades", "technical-support"],
+            "context": {
+                "role": "Customer Service Representative for an internet service provider",
+                "company_name": "Etech",
+                "available_services": [
+                    {
+                        "name": "Standard Broadband",
+                        "download_speed": "50 Mbps",
+                        "upload_speed": "10 Mbps",
+                        "price": "$49.99/month"
+                    },
+                    {
+                        "name": "High-Speed Broadband",
+                        "download_speed": "200 Mbps",
+                        "upload_speed": "20 Mbps",
+                        "price": "$69.99/month"
+                    },
+                    {
+                        "name": "Ultra-Fast Fiber",
+                        "download_speed": "500 Mbps",
+                        "upload_speed": "50 Mbps",
+                        "price": "$89.99/month"
+                    },
+                    {
+                        "name": "Gigabit Fiber",
+                        "download_speed": "1000 Mbps",
+                        "upload_speed": "100 Mbps",
+                        "price": "$119.99/month"
+                    }
+                ],
+                "special_offers": [
+                    {
+                        "description": "Free upgrade from Standard to High-Speed for loyal customers",
+                        "eligibility": "Customers with accounts older than 1 year",
+                        "details": "No price increase, effective immediately after processing"
+                    },
+                    {
+                        "description": "50% off Ultra-Fast Fiber for 6 months",
+                        "eligibility": "New upgrades from Standard or High-Speed",
+                        "details": "$44.99/month for first 6 months, then $89.99/month"
+                    }
+                ]
+            },
+            "customer_profile": {
+                "account_age": "15 months",
+                "current_plan": "Standard Broadband",
+                "payment_history": "Excellent",
+                "eligible_offers": ["Free upgrade to High-Speed"]
+            },
+            "conversation_flow": {
+                "greeting": {
+                    "agent_goals": ["Greet the customer warmly", "Introduce yourself", "Ask how you can help"]
+                },
+                "problem_identification": {
+                    "agent_goals": ["Identify the customer's interest in upgrading internet", "Express enthusiasm about helping"]
+                },
+                "information_gathering": {
+                    "agent_goals": ["Ask for account information", "Verify the customer's identity", "Check account details and available offers"]
+                },
+                "solution_presentation": {
+                    "agent_goals": ["Inform about current plan", "Present available upgrade options", "Highlight special offers the customer is eligible for"]
+                },
+                "question_handling": {
+                    "agent_goals": ["Answer questions about download/upload speeds", "Explain pricing details", "Address any concerns"]
+                },
+                "confirmation": {
+                    "agent_goals": ["Confirm the customer's choice", "Process the upgrade request", "Provide details about when the upgrade will take effect"]
+                },
+                "closing": {
+                    "agent_goals": ["Confirm customer satisfaction", "Thank the customer", "Provide a positive closing statement"]
+                }
+            },
+            "evaluation_criteria": {
+                "greeting_quality": "How well the agent greeted the customer and established rapport",
+                "problem_solving": "How effectively the agent identified and addressed the customer's needs",
+                "knowledge": "Accuracy and completeness of information provided about services and offers",
+                "communication": "Clarity, professionalism, and friendliness of communication",
+                "efficiency": "How quickly and effectively the agent processed the request",
+                "overall_satisfaction": "Overall quality of the customer service experience"
+            }
+        },
+        {
+            "id": "customer_service_password_reset",
+            "title": "Account Password Reset",
+            "description": "Assist a customer who has forgotten their password and needs to reset it. Guide them through the password reset process and answer any questions.",
+            "difficulty": "easy",
+            "duration": 10,
+            "topics": ["customer-service", "account-management", "password-reset", "technical-support"],
+            "context": {
+                "role": "Customer Service Representative for an online service",
+                "company_name": "Etech",
+                "password_requirements": {
+                    "minimum_length": 8,
+                    "requires_uppercase": true,
+                    "requires_lowercase": true,
+                    "requires_number": true,
+                    "requires_special_char": true,
+                    "example": "Sunday@1"
+                },
+                "reset_process": [
+                    "Verify customer identity",
+                    "Send reset link to registered email",
+                    "Customer clicks link and creates new password",
+                    "System confirms password reset"
+                ]
+            },
+            "customer_profile": {
+                "full_name": "Pranav Singh",
+                "email": "psingh***@gmail.com",
+                "phone": "*********"
+            },
+            "conversation_flow": {
+                "greeting": {
+                    "agent_goals": ["Greet the customer warmly", "Introduce yourself", "Ask how you can help"]
+                },
+                "problem_identification": {
+                    "agent_goals": ["Identify the password reset need", "Express willingness to help"]
+                },
+                "information_gathering": {
+                    "agent_goals": ["Ask for identifying information", "Verify the customer's identity"]
+                },
+                "solution_implementation": {
+                    "agent_goals": ["Send password reset link", "Confirm the customer received the link"]
+                },
+                "guidance": {
+                    "agent_goals": ["Guide through reset process", "Explain password requirements", "Provide example if needed"]
+                },
+                "confirmation": {
+                    "agent_goals": ["Confirm successful password reset", "Ensure the customer can log in"]
+                },
+                "closing": {
+                    "agent_goals": ["Ask if there's anything else needed", "Thank the customer", "Provide a positive closing statement"]
+                }
+            },
+            "evaluation_criteria": {
+                "greeting_quality": "How well the agent greeted the customer and established rapport",
+                "security_adherence": "How well the agent followed security protocols for identity verification",
+                "guidance_clarity": "Clarity and helpfulness of instructions provided",
+                "problem_resolution": "Effectiveness in resolving the password reset issue",
+                "communication": "Clarity, professionalism, and friendliness of communication",
+                "overall_satisfaction": "Overall quality of the customer service experience"
+            }
+        }
+    ]
+}

@@ -1,0 +1,913 @@
+2025-08-01 19:54:07.248 | INFO     | domains.recruitment.scenario_manager:load_scenarios:47 - Loaded 7 scenarios from /Users/mohitverma/Downloads/recruitment_bot/data/scenarios.json
+2025-08-01 19:54:08.528 | ERROR    | __main__:<module>:26 - Failed to import required modules: No module named 'chat_with_summarization'
+2025-08-01 19:57:13.818 | INFO     | domains.recruitment.scenario_manager:load_scenarios:47 - Loaded 7 scenarios from /Users/mohitverma/Downloads/recruitment_bot/data/scenarios.json
+2025-08-01 19:57:17.089 | INFO     | domains.utils:get_chat_llm:40 - Using ARN model ID for CHAT_MODEL_NAME: arn:aws:bedrock:us-east-1:688427729924:inference-profile/us.meta.llama3-3-70b-instruct-v1:0 with provider: meta
+2025-08-01 19:57:17.372 | INFO     | domains.recruitment.conversation:initialize_conversation_engine:28 - Conversation engine initialized
+2025-08-01 19:58:10.321 | INFO     | domains.recruitment.scenario_manager:load_scenarios:47 - Loaded 7 scenarios from /Users/mohitverma/Downloads/recruitment_bot/data/scenarios.json
+2025-08-01 19:58:11.574 | INFO     | domains.utils:get_chat_llm:40 - Using ARN model ID for CHAT_MODEL_NAME: arn:aws:bedrock:us-east-1:688427729924:inference-profile/us.meta.llama3-3-70b-instruct-v1:0 with provider: meta
+2025-08-01 19:58:11.782 | INFO     | domains.recruitment.conversation:initialize_conversation_engine:28 - Conversation engine initialized
+2025-08-01 19:58:11.830 | INFO     | domains.utils:get_chat_llm:40 - Using ARN model ID for CHAT_MODEL_NAME: arn:aws:bedrock:us-east-1:688427729924:inference-profile/us.meta.llama3-3-70b-instruct-v1:0 with provider: meta
+2025-08-01 19:58:11.832 | INFO     | domains.recruitment.evaluation:initialize_evaluation_system:50 - Evaluation system initialized
+2025-08-01 19:58:11.944 | INFO     | domains.recruitment.storage:_initialize_database:90 - Initialized database at /Users/mohitverma/Downloads/recruitment_bot/data/interviews.db
+2025-08-01 19:58:11.945 | INFO     | domains.handler:initialize_handler:57 - Initialized HR Automation Handler
+2025-08-01 19:58:11.945 | INFO     | __main__:<module>:29 - Starting HR Automation Test Script
+2025-08-01 19:58:11.945 | INFO     | __main__:main:429 - Starting HR Automation tests
+2025-08-01 19:58:11.945 | INFO     | __main__:main:437 - Found 7 scenarios
+2025-08-01 19:58:11.945 | INFO     | __main__:test_basic_flow:265 - Testing basic flow
+2025-08-01 19:58:11.945 | INFO     | domains.recruitment.scenario_manager:select_random_scenario:89 - Randomly selected scenario: backend_chat_5 - Real-time Chat Application Backend
+2025-08-01 19:58:11.951 | INFO     | domains.recruitment.storage:create_session:132 - Created new session 5d5c5b1b-6821-4547-8eca-044190a84b01 for scenario backend_chat_5
+2025-08-01 19:58:11.951 | INFO     | domains.recruitment.conversation:start_interview:83 - Started interview with scenario: backend_chat_5
+2025-08-01 19:58:11.951 | INFO     | domains.handler:start_interview_session:115 - Started interview session 5d5c5b1b-6821-4547-8eca-044190a84b01 with scenario backend_chat_5
+2025-08-01 19:58:11.951 | INFO     | __main__:test_basic_flow:276 - Started interview session with ID: 5d5c5b1b-6821-4547-8eca-044190a84b01
+2025-08-01 19:58:11.952 | INFO     | __main__:test_basic_flow:280 - Processing response 1/7
+2025-08-01 19:58:11.953 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:11.953 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:11.953 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:11.953 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:11.953 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:11.953 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:12.995 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q2
+2025-08-01 19:58:12.995 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q2
+2025-08-01 19:58:12.995 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q2
+2025-08-01 19:58:13.000 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 16a4b95b-98ef-458d-a54c-c5c2b2a274c5 for session 5d5c5b1b-6821-4547-8eca-044190a84b01, question q1
+2025-08-01 19:58:13.000 | INFO     | domains.handler:process_response:235 - Processed response for session 5d5c5b1b-6821-4547-8eca-044190a84b01
+2025-08-01 19:58:13.000 | INFO     | __main__:test_basic_flow:280 - Processing response 2/7
+2025-08-01 19:58:13.003 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:13.004 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:13.004 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:13.004 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:13.004 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:13.004 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:13.521 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q4
+2025-08-01 19:58:13.521 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q4
+2025-08-01 19:58:13.522 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q4
+2025-08-01 19:58:13.526 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 94f6580f-e5e8-426b-9152-77161c4aee0e for session 5d5c5b1b-6821-4547-8eca-044190a84b01, question q2
+2025-08-01 19:58:13.526 | INFO     | domains.handler:process_response:235 - Processed response for session 5d5c5b1b-6821-4547-8eca-044190a84b01
+2025-08-01 19:58:13.526 | INFO     | __main__:test_basic_flow:280 - Processing response 3/7
+2025-08-01 19:58:13.530 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:13.531 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:13.531 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:13.531 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:13.531 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:13.531 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:14.042 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q6
+2025-08-01 19:58:14.042 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q6
+2025-08-01 19:58:14.042 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q6
+2025-08-01 19:58:14.046 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 2e60486f-d289-4f10-a4e0-bb6282d5c09e for session 5d5c5b1b-6821-4547-8eca-044190a84b01, question q3
+2025-08-01 19:58:14.046 | INFO     | domains.handler:process_response:235 - Processed response for session 5d5c5b1b-6821-4547-8eca-044190a84b01
+2025-08-01 19:58:14.046 | INFO     | __main__:test_basic_flow:280 - Processing response 4/7
+2025-08-01 19:58:14.049 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:14.049 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:14.049 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:14.049 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:14.050 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:14.050 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:14.567 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q6
+2025-08-01 19:58:14.568 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q6
+2025-08-01 19:58:14.568 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q6
+2025-08-01 19:58:14.572 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 2bab5df4-6b95-4351-a0c2-443fbd86f32f for session 5d5c5b1b-6821-4547-8eca-044190a84b01, question q4
+2025-08-01 19:58:14.573 | INFO     | domains.handler:process_response:235 - Processed response for session 5d5c5b1b-6821-4547-8eca-044190a84b01
+2025-08-01 19:58:14.573 | INFO     | __main__:test_basic_flow:280 - Processing response 5/7
+2025-08-01 19:58:14.575 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:14.575 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:14.575 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:14.576 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:14.576 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:14.576 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:15.088 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q6
+2025-08-01 19:58:15.089 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q6
+2025-08-01 19:58:15.089 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q6
+2025-08-01 19:58:15.093 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 51a4ecaf-a564-4c1e-a0c7-a6b966f86941 for session 5d5c5b1b-6821-4547-8eca-044190a84b01, question q5
+2025-08-01 19:58:15.093 | INFO     | domains.handler:process_response:235 - Processed response for session 5d5c5b1b-6821-4547-8eca-044190a84b01
+2025-08-01 19:58:15.093 | INFO     | __main__:test_basic_flow:280 - Processing response 6/7
+2025-08-01 19:58:15.097 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:15.098 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:15.098 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:15.098 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:15.098 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:15.098 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:15.614 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:15.614 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:15.614 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:15.618 | INFO     | domains.recruitment.storage:store_response:210 - Stored response bb89f431-0ffe-4a6d-a0c1-a0b6807a1358 for session 5d5c5b1b-6821-4547-8eca-044190a84b01, question q6
+2025-08-01 19:58:15.618 | INFO     | domains.handler:process_response:235 - Processed response for session 5d5c5b1b-6821-4547-8eca-044190a84b01
+2025-08-01 19:58:15.618 | INFO     | __main__:test_basic_flow:280 - Processing response 7/7
+2025-08-01 19:58:15.620 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:15.620 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:15.620 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:15.620 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:15.621 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:15.621 | INFO     | domains.recruitment.conversation:select_next_question:280 - Only one question left: q7
+2025-08-01 19:58:15.621 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:15.624 | INFO     | domains.recruitment.storage:store_response:210 - Stored response f52da1a6-6122-41f5-8ce1-c8bc6fde2ad7 for session 5d5c5b1b-6821-4547-8eca-044190a84b01, question q7
+2025-08-01 19:58:15.624 | INFO     | domains.handler:process_response:235 - Processed response for session 5d5c5b1b-6821-4547-8eca-044190a84b01
+2025-08-01 19:58:15.624 | WARNING  | __main__:test_basic_flow:301 - Interview not completed with provided responses
+2025-08-01 19:58:15.624 | INFO     | __main__:test_edge_cases:310 - Testing edge cases
+2025-08-01 19:58:15.624 | INFO     | __main__:test_edge_cases:324 - Testing edge case: Short responses
+2025-08-01 19:58:15.624 | INFO     | domains.recruitment.scenario_manager:select_random_scenario:89 - Randomly selected scenario: cloud_infra_6 - Cloud Infrastructure Automation with Terraform
+2025-08-01 19:58:15.627 | INFO     | domains.recruitment.storage:create_session:132 - Created new session ed64df4f-6148-4d5a-81a0-580379cb599b for scenario cloud_infra_6
+2025-08-01 19:58:15.627 | INFO     | domains.recruitment.conversation:start_interview:83 - Started interview with scenario: cloud_infra_6
+2025-08-01 19:58:15.627 | INFO     | domains.handler:start_interview_session:115 - Started interview session ed64df4f-6148-4d5a-81a0-580379cb599b with scenario cloud_infra_6
+2025-08-01 19:58:15.627 | INFO     | __main__:test_edge_cases:338 - Processing response 1/7
+2025-08-01 19:58:15.629 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:15.629 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:15.629 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:15.629 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:15.629 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:15.629 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:16.138 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q2
+2025-08-01 19:58:16.139 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q2
+2025-08-01 19:58:16.139 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q2
+2025-08-01 19:58:16.142 | INFO     | domains.recruitment.storage:store_response:210 - Stored response aa96981b-99a6-463c-8061-e98aa135d527 for session ed64df4f-6148-4d5a-81a0-580379cb599b, question q1
+2025-08-01 19:58:16.142 | INFO     | domains.handler:process_response:235 - Processed response for session ed64df4f-6148-4d5a-81a0-580379cb599b
+2025-08-01 19:58:16.143 | INFO     | __main__:test_edge_cases:338 - Processing response 2/7
+2025-08-01 19:58:16.145 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:16.145 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:16.145 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:16.145 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:16.146 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:16.146 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:16.662 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q3
+2025-08-01 19:58:16.663 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q3
+2025-08-01 19:58:16.663 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q3
+2025-08-01 19:58:16.666 | INFO     | domains.recruitment.storage:store_response:210 - Stored response f5ba0ad4-02d8-47fe-ba4b-e043b5ae7d0c for session ed64df4f-6148-4d5a-81a0-580379cb599b, question q2
+2025-08-01 19:58:16.667 | INFO     | domains.handler:process_response:235 - Processed response for session ed64df4f-6148-4d5a-81a0-580379cb599b
+2025-08-01 19:58:16.667 | INFO     | __main__:test_edge_cases:338 - Processing response 3/7
+2025-08-01 19:58:16.669 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:16.669 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:16.669 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:16.669 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:16.669 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:16.669 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:17.189 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q4
+2025-08-01 19:58:17.189 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q4
+2025-08-01 19:58:17.189 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q4
+2025-08-01 19:58:17.194 | INFO     | domains.recruitment.storage:store_response:210 - Stored response d7c7f5ec-af2c-49cd-894d-802f330b9460 for session ed64df4f-6148-4d5a-81a0-580379cb599b, question q3
+2025-08-01 19:58:17.194 | INFO     | domains.handler:process_response:235 - Processed response for session ed64df4f-6148-4d5a-81a0-580379cb599b
+2025-08-01 19:58:17.194 | INFO     | __main__:test_edge_cases:338 - Processing response 4/7
+2025-08-01 19:58:17.198 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:17.198 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:17.198 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:17.198 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:17.198 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:17.198 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:17.710 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:17.710 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:17.711 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:17.714 | INFO     | domains.recruitment.storage:store_response:210 - Stored response dee654e3-873f-4589-a8f8-2df256538f0e for session ed64df4f-6148-4d5a-81a0-580379cb599b, question q4
+2025-08-01 19:58:17.714 | INFO     | domains.handler:process_response:235 - Processed response for session ed64df4f-6148-4d5a-81a0-580379cb599b
+2025-08-01 19:58:17.714 | INFO     | __main__:test_edge_cases:338 - Processing response 5/7
+2025-08-01 19:58:17.716 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:17.716 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:17.716 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:17.716 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:17.716 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:17.717 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:18.238 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:18.238 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:18.238 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:18.242 | INFO     | domains.recruitment.storage:store_response:210 - Stored response a886114a-5123-46d8-87ca-d68c2a1c5baa for session ed64df4f-6148-4d5a-81a0-580379cb599b, question q5
+2025-08-01 19:58:18.243 | INFO     | domains.handler:process_response:235 - Processed response for session ed64df4f-6148-4d5a-81a0-580379cb599b
+2025-08-01 19:58:18.243 | INFO     | __main__:test_edge_cases:338 - Processing response 6/7
+2025-08-01 19:58:18.246 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:18.246 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:18.246 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:18.246 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:18.246 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:18.246 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:18.760 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:18.760 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:18.760 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:18.764 | INFO     | domains.recruitment.storage:store_response:210 - Stored response ad806f98-082c-4b4a-8518-8915885eebbe for session ed64df4f-6148-4d5a-81a0-580379cb599b, question q6
+2025-08-01 19:58:18.764 | INFO     | domains.handler:process_response:235 - Processed response for session ed64df4f-6148-4d5a-81a0-580379cb599b
+2025-08-01 19:58:18.764 | INFO     | __main__:test_edge_cases:338 - Processing response 7/7
+2025-08-01 19:58:18.766 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:18.766 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:18.766 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:18.766 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:18.766 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:18.767 | INFO     | domains.recruitment.conversation:select_next_question:280 - Only one question left: q7
+2025-08-01 19:58:18.767 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:18.770 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 83cba3d2-ae94-458e-aac3-3959943d1b98 for session ed64df4f-6148-4d5a-81a0-580379cb599b, question q7
+2025-08-01 19:58:18.771 | INFO     | domains.handler:process_response:235 - Processed response for session ed64df4f-6148-4d5a-81a0-580379cb599b
+2025-08-01 19:58:18.771 | WARNING  | __main__:test_edge_cases:354 - Interview not completed for edge case: Short responses
+2025-08-01 19:58:18.771 | INFO     | __main__:test_edge_cases:324 - Testing edge case: Long response
+2025-08-01 19:58:18.771 | INFO     | domains.recruitment.scenario_manager:select_random_scenario:89 - Randomly selected scenario: ecommerce_api_1 - E-commerce API Design
+2025-08-01 19:58:18.774 | INFO     | domains.recruitment.storage:create_session:132 - Created new session 92900232-cd6e-4e6f-bd4b-db12b95bec01 for scenario ecommerce_api_1
+2025-08-01 19:58:18.774 | INFO     | domains.recruitment.conversation:start_interview:83 - Started interview with scenario: ecommerce_api_1
+2025-08-01 19:58:18.774 | INFO     | domains.handler:start_interview_session:115 - Started interview session 92900232-cd6e-4e6f-bd4b-db12b95bec01 with scenario ecommerce_api_1
+2025-08-01 19:58:18.774 | INFO     | __main__:test_edge_cases:338 - Processing response 1/7
+2025-08-01 19:58:18.775 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:18.776 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:18.776 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:18.776 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:18.776 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:18.776 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:19.286 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q2
+2025-08-01 19:58:19.287 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q2
+2025-08-01 19:58:19.287 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q2
+2025-08-01 19:58:19.291 | INFO     | domains.recruitment.storage:store_response:210 - Stored response f20ee52a-c318-4ef0-ba2f-a011556f95ff for session 92900232-cd6e-4e6f-bd4b-db12b95bec01, question q1
+2025-08-01 19:58:19.292 | INFO     | domains.handler:process_response:235 - Processed response for session 92900232-cd6e-4e6f-bd4b-db12b95bec01
+2025-08-01 19:58:19.292 | INFO     | __main__:test_edge_cases:338 - Processing response 2/7
+2025-08-01 19:58:19.295 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:19.295 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:19.295 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:19.296 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:19.296 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:19.296 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:19.808 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q3
+2025-08-01 19:58:19.809 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q3
+2025-08-01 19:58:19.809 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q3
+2025-08-01 19:58:19.812 | INFO     | domains.recruitment.storage:store_response:210 - Stored response ba144c64-cb0a-4ac7-be35-073d0eb10077 for session 92900232-cd6e-4e6f-bd4b-db12b95bec01, question q2
+2025-08-01 19:58:19.813 | INFO     | domains.handler:process_response:235 - Processed response for session 92900232-cd6e-4e6f-bd4b-db12b95bec01
+2025-08-01 19:58:19.813 | INFO     | __main__:test_edge_cases:338 - Processing response 3/7
+2025-08-01 19:58:19.815 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:19.815 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:19.815 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:19.815 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:19.815 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:19.815 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:20.335 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q4
+2025-08-01 19:58:20.336 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q4
+2025-08-01 19:58:20.336 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q4
+2025-08-01 19:58:20.339 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 0ed66c81-8db8-4b53-833d-cfc07f3b071d for session 92900232-cd6e-4e6f-bd4b-db12b95bec01, question q3
+2025-08-01 19:58:20.339 | INFO     | domains.handler:process_response:235 - Processed response for session 92900232-cd6e-4e6f-bd4b-db12b95bec01
+2025-08-01 19:58:20.339 | INFO     | __main__:test_edge_cases:338 - Processing response 4/7
+2025-08-01 19:58:20.342 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:20.342 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:20.342 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:20.343 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:20.343 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:20.343 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:21.048 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q5
+2025-08-01 19:58:21.048 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q5
+2025-08-01 19:58:21.049 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q5
+2025-08-01 19:58:21.052 | INFO     | domains.recruitment.storage:store_response:210 - Stored response d6fe45fc-616b-44b8-97d6-fbeeb9412d89 for session 92900232-cd6e-4e6f-bd4b-db12b95bec01, question q4
+2025-08-01 19:58:21.052 | INFO     | domains.handler:process_response:235 - Processed response for session 92900232-cd6e-4e6f-bd4b-db12b95bec01
+2025-08-01 19:58:21.052 | INFO     | __main__:test_edge_cases:338 - Processing response 5/7
+2025-08-01 19:58:21.056 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:21.056 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:21.057 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:21.057 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:21.057 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:21.057 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:21.579 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:21.579 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:21.579 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:21.584 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 48c32ff2-817f-4af8-b21d-6fe788f8219c for session 92900232-cd6e-4e6f-bd4b-db12b95bec01, question q5
+2025-08-01 19:58:21.585 | INFO     | domains.handler:process_response:235 - Processed response for session 92900232-cd6e-4e6f-bd4b-db12b95bec01
+2025-08-01 19:58:21.585 | INFO     | __main__:test_edge_cases:338 - Processing response 6/7
+2025-08-01 19:58:21.587 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:21.587 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:21.587 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:21.587 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:21.587 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:21.587 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:22.430 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:22.431 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:22.431 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:22.435 | INFO     | domains.recruitment.storage:store_response:210 - Stored response bb9c484f-4fa2-4b3b-b961-993a5e783feb for session 92900232-cd6e-4e6f-bd4b-db12b95bec01, question q6
+2025-08-01 19:58:22.435 | INFO     | domains.handler:process_response:235 - Processed response for session 92900232-cd6e-4e6f-bd4b-db12b95bec01
+2025-08-01 19:58:22.435 | INFO     | __main__:test_edge_cases:338 - Processing response 7/7
+2025-08-01 19:58:22.439 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:22.439 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:22.439 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:22.439 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:22.439 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:22.439 | INFO     | domains.recruitment.conversation:select_next_question:280 - Only one question left: q7
+2025-08-01 19:58:22.440 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:22.442 | INFO     | domains.recruitment.storage:store_response:210 - Stored response d8eb1a28-9926-4396-ba9d-092e46ed943d for session 92900232-cd6e-4e6f-bd4b-db12b95bec01, question q7
+2025-08-01 19:58:22.442 | INFO     | domains.handler:process_response:235 - Processed response for session 92900232-cd6e-4e6f-bd4b-db12b95bec01
+2025-08-01 19:58:22.442 | WARNING  | __main__:test_edge_cases:354 - Interview not completed for edge case: Long response
+2025-08-01 19:58:22.443 | INFO     | __main__:test_edge_cases:324 - Testing edge case: Code response
+2025-08-01 19:58:22.443 | INFO     | domains.recruitment.scenario_manager:select_random_scenario:89 - Randomly selected scenario: cloud_infra_6 - Cloud Infrastructure Automation with Terraform
+2025-08-01 19:58:22.445 | INFO     | domains.recruitment.storage:create_session:132 - Created new session 3d70639e-7ba7-4600-8b17-efa848b0bbec for scenario cloud_infra_6
+2025-08-01 19:58:22.445 | INFO     | domains.recruitment.conversation:start_interview:83 - Started interview with scenario: cloud_infra_6
+2025-08-01 19:58:22.445 | INFO     | domains.handler:start_interview_session:115 - Started interview session 3d70639e-7ba7-4600-8b17-efa848b0bbec with scenario cloud_infra_6
+2025-08-01 19:58:22.445 | INFO     | __main__:test_edge_cases:338 - Processing response 1/7
+2025-08-01 19:58:22.447 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:22.447 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:22.447 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:22.447 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:22.447 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:22.447 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:22.954 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q2
+2025-08-01 19:58:22.955 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q2
+2025-08-01 19:58:22.955 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q2
+2025-08-01 19:58:22.959 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 731faec7-3f51-4e82-9760-39bbe96c9792 for session 3d70639e-7ba7-4600-8b17-efa848b0bbec, question q1
+2025-08-01 19:58:22.959 | INFO     | domains.handler:process_response:235 - Processed response for session 3d70639e-7ba7-4600-8b17-efa848b0bbec
+2025-08-01 19:58:22.960 | INFO     | __main__:test_edge_cases:338 - Processing response 2/7
+2025-08-01 19:58:22.961 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:22.961 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:22.962 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:22.962 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:22.962 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:22.962 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:23.692 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q3
+2025-08-01 19:58:23.692 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q3
+2025-08-01 19:58:23.693 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q3
+2025-08-01 19:58:23.696 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 54e4d63c-67e4-45d0-a80c-f23f6ecc6cf7 for session 3d70639e-7ba7-4600-8b17-efa848b0bbec, question q2
+2025-08-01 19:58:23.696 | INFO     | domains.handler:process_response:235 - Processed response for session 3d70639e-7ba7-4600-8b17-efa848b0bbec
+2025-08-01 19:58:23.696 | INFO     | __main__:test_edge_cases:338 - Processing response 3/7
+2025-08-01 19:58:23.711 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:23.711 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:23.711 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:23.712 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:23.712 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:23.712 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:24.199 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q4
+2025-08-01 19:58:24.199 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q4
+2025-08-01 19:58:24.200 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q4
+2025-08-01 19:58:24.203 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 91f6a383-1570-4d9e-a1a6-004ab9fddd85 for session 3d70639e-7ba7-4600-8b17-efa848b0bbec, question q3
+2025-08-01 19:58:24.203 | INFO     | domains.handler:process_response:235 - Processed response for session 3d70639e-7ba7-4600-8b17-efa848b0bbec
+2025-08-01 19:58:24.203 | INFO     | __main__:test_edge_cases:338 - Processing response 4/7
+2025-08-01 19:58:24.205 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:24.206 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:24.206 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:24.206 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:24.206 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:24.206 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:25.055 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:25.056 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:25.056 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:25.061 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 7fab32dd-c85a-4d02-9f4a-ec2c3f245b1e for session 3d70639e-7ba7-4600-8b17-efa848b0bbec, question q4
+2025-08-01 19:58:25.061 | INFO     | domains.handler:process_response:235 - Processed response for session 3d70639e-7ba7-4600-8b17-efa848b0bbec
+2025-08-01 19:58:25.061 | INFO     | __main__:test_edge_cases:338 - Processing response 5/7
+2025-08-01 19:58:25.066 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:25.066 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:25.066 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:25.066 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:25.066 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:25.066 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:25.590 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:25.590 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:25.591 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:25.594 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 404e88fe-e317-4198-8543-89263bdb4ce1 for session 3d70639e-7ba7-4600-8b17-efa848b0bbec, question q5
+2025-08-01 19:58:25.594 | INFO     | domains.handler:process_response:235 - Processed response for session 3d70639e-7ba7-4600-8b17-efa848b0bbec
+2025-08-01 19:58:25.594 | INFO     | __main__:test_edge_cases:338 - Processing response 6/7
+2025-08-01 19:58:25.596 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:25.597 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:25.597 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:25.597 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:25.597 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:25.597 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:26.150 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q6
+2025-08-01 19:58:26.150 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q6
+2025-08-01 19:58:26.151 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q6
+2025-08-01 19:58:26.154 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 94787562-d514-4d95-b4bb-4def1cece231 for session 3d70639e-7ba7-4600-8b17-efa848b0bbec, question q6
+2025-08-01 19:58:26.154 | INFO     | domains.handler:process_response:235 - Processed response for session 3d70639e-7ba7-4600-8b17-efa848b0bbec
+2025-08-01 19:58:26.154 | INFO     | __main__:test_edge_cases:338 - Processing response 7/7
+2025-08-01 19:58:26.170 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:26.170 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:26.170 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:26.170 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:26.170 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:26.170 | INFO     | domains.recruitment.conversation:select_next_question:280 - Only one question left: q7
+2025-08-01 19:58:26.170 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:26.172 | INFO     | domains.recruitment.storage:store_response:210 - Stored response b0406388-ed05-4ddb-86c2-ca7626d42c85 for session 3d70639e-7ba7-4600-8b17-efa848b0bbec, question q7
+2025-08-01 19:58:26.173 | INFO     | domains.handler:process_response:235 - Processed response for session 3d70639e-7ba7-4600-8b17-efa848b0bbec
+2025-08-01 19:58:26.173 | WARNING  | __main__:test_edge_cases:354 - Interview not completed for edge case: Code response
+2025-08-01 19:58:26.173 | INFO     | __main__:test_edge_cases:324 - Testing edge case: Foreign language
+2025-08-01 19:58:26.173 | INFO     | domains.recruitment.scenario_manager:select_random_scenario:89 - Randomly selected scenario: devops_cicd_4 - CI/CD Pipeline for a Microservices Architecture
+2025-08-01 19:58:26.175 | INFO     | domains.recruitment.storage:create_session:132 - Created new session 7b720360-0f84-43be-b0d6-620c3200dca9 for scenario devops_cicd_4
+2025-08-01 19:58:26.175 | INFO     | domains.recruitment.conversation:start_interview:83 - Started interview with scenario: devops_cicd_4
+2025-08-01 19:58:26.175 | INFO     | domains.handler:start_interview_session:115 - Started interview session 7b720360-0f84-43be-b0d6-620c3200dca9 with scenario devops_cicd_4
+2025-08-01 19:58:26.175 | INFO     | __main__:test_edge_cases:338 - Processing response 1/7
+2025-08-01 19:58:26.177 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:26.177 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:26.177 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:26.177 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:26.177 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:26.177 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:26.821 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q2
+2025-08-01 19:58:26.822 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q2
+2025-08-01 19:58:26.822 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q2
+2025-08-01 19:58:26.825 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 89cd79f2-a52b-4595-9ac4-24e906bdee2a for session 7b720360-0f84-43be-b0d6-620c3200dca9, question q1
+2025-08-01 19:58:26.825 | INFO     | domains.handler:process_response:235 - Processed response for session 7b720360-0f84-43be-b0d6-620c3200dca9
+2025-08-01 19:58:26.825 | INFO     | __main__:test_edge_cases:338 - Processing response 2/7
+2025-08-01 19:58:26.827 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:26.827 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:26.827 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:26.827 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:26.827 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:26.827 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:27.674 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q3
+2025-08-01 19:58:27.675 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q3
+2025-08-01 19:58:27.675 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q3
+2025-08-01 19:58:27.679 | INFO     | domains.recruitment.storage:store_response:210 - Stored response f692ae9c-9b0c-4b6a-a68f-af3e870f2898 for session 7b720360-0f84-43be-b0d6-620c3200dca9, question q2
+2025-08-01 19:58:27.679 | INFO     | domains.handler:process_response:235 - Processed response for session 7b720360-0f84-43be-b0d6-620c3200dca9
+2025-08-01 19:58:27.679 | INFO     | __main__:test_edge_cases:338 - Processing response 3/7
+2025-08-01 19:58:27.684 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:27.684 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:27.684 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:27.684 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:27.684 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:27.684 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:28.196 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q4
+2025-08-01 19:58:28.196 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q4
+2025-08-01 19:58:28.196 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q4
+2025-08-01 19:58:28.201 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 3fb26427-245c-4289-a2ff-dad9b5daf892 for session 7b720360-0f84-43be-b0d6-620c3200dca9, question q3
+2025-08-01 19:58:28.201 | INFO     | domains.handler:process_response:235 - Processed response for session 7b720360-0f84-43be-b0d6-620c3200dca9
+2025-08-01 19:58:28.201 | INFO     | __main__:test_edge_cases:338 - Processing response 4/7
+2025-08-01 19:58:28.206 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:28.206 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:28.206 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:28.207 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:28.207 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:28.207 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:28.910 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q5
+2025-08-01 19:58:28.911 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q5
+2025-08-01 19:58:28.911 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q5
+2025-08-01 19:58:28.915 | INFO     | domains.recruitment.storage:store_response:210 - Stored response ebb4d856-e854-4023-a06d-c781345e00c7 for session 7b720360-0f84-43be-b0d6-620c3200dca9, question q4
+2025-08-01 19:58:28.915 | INFO     | domains.handler:process_response:235 - Processed response for session 7b720360-0f84-43be-b0d6-620c3200dca9
+2025-08-01 19:58:28.915 | INFO     | __main__:test_edge_cases:338 - Processing response 5/7
+2025-08-01 19:58:28.918 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:28.918 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:28.918 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:28.918 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:28.918 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:28.918 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:29.772 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q6
+2025-08-01 19:58:29.772 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q6
+2025-08-01 19:58:29.773 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q6
+2025-08-01 19:58:29.776 | INFO     | domains.recruitment.storage:store_response:210 - Stored response b1e5d389-524a-4a95-ad13-31141320bb59 for session 7b720360-0f84-43be-b0d6-620c3200dca9, question q5
+2025-08-01 19:58:29.776 | INFO     | domains.handler:process_response:235 - Processed response for session 7b720360-0f84-43be-b0d6-620c3200dca9
+2025-08-01 19:58:29.776 | INFO     | __main__:test_edge_cases:338 - Processing response 6/7
+2025-08-01 19:58:29.782 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:29.782 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:29.782 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:29.782 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:29.782 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:29.782 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:30.296 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:30.296 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:30.297 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:30.301 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 4688cf83-0c27-4f43-9829-4dac704c72a1 for session 7b720360-0f84-43be-b0d6-620c3200dca9, question q6
+2025-08-01 19:58:30.301 | INFO     | domains.handler:process_response:235 - Processed response for session 7b720360-0f84-43be-b0d6-620c3200dca9
+2025-08-01 19:58:30.301 | INFO     | __main__:test_edge_cases:338 - Processing response 7/7
+2025-08-01 19:58:30.305 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:30.305 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:30.305 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:30.305 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:30.305 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:30.305 | INFO     | domains.recruitment.conversation:select_next_question:280 - Only one question left: q7
+2025-08-01 19:58:30.305 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:30.309 | INFO     | domains.recruitment.storage:store_response:210 - Stored response d773f7f8-020a-4672-8875-649f718fddb5 for session 7b720360-0f84-43be-b0d6-620c3200dca9, question q7
+2025-08-01 19:58:30.309 | INFO     | domains.handler:process_response:235 - Processed response for session 7b720360-0f84-43be-b0d6-620c3200dca9
+2025-08-01 19:58:30.309 | WARNING  | __main__:test_edge_cases:354 - Interview not completed for edge case: Foreign language
+2025-08-01 19:58:30.309 | INFO     | __main__:test_edge_cases:324 - Testing edge case: Special characters
+2025-08-01 19:58:30.309 | INFO     | domains.recruitment.scenario_manager:select_random_scenario:89 - Randomly selected scenario: cybersecurity_api_7 - API Security and Threat Mitigation
+2025-08-01 19:58:30.312 | INFO     | domains.recruitment.storage:create_session:132 - Created new session 3c9f8cd0-7183-452b-9b6c-717090e80a74 for scenario cybersecurity_api_7
+2025-08-01 19:58:30.312 | INFO     | domains.recruitment.conversation:start_interview:83 - Started interview with scenario: cybersecurity_api_7
+2025-08-01 19:58:30.312 | INFO     | domains.handler:start_interview_session:115 - Started interview session 3c9f8cd0-7183-452b-9b6c-717090e80a74 with scenario cybersecurity_api_7
+2025-08-01 19:58:30.312 | INFO     | __main__:test_edge_cases:338 - Processing response 1/7
+2025-08-01 19:58:30.314 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:30.315 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:30.315 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:30.315 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:30.315 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:30.315 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:30.820 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q2
+2025-08-01 19:58:30.820 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q2
+2025-08-01 19:58:30.821 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q2
+2025-08-01 19:58:30.826 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 481c6710-fee7-40e4-bd50-43afc1c1d123 for session 3c9f8cd0-7183-452b-9b6c-717090e80a74, question q1
+2025-08-01 19:58:30.826 | INFO     | domains.handler:process_response:235 - Processed response for session 3c9f8cd0-7183-452b-9b6c-717090e80a74
+2025-08-01 19:58:30.826 | INFO     | __main__:test_edge_cases:338 - Processing response 2/7
+2025-08-01 19:58:30.829 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:30.829 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:30.829 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:30.829 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:30.829 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:30.829 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:31.345 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q3
+2025-08-01 19:58:31.345 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q3
+2025-08-01 19:58:31.345 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q3
+2025-08-01 19:58:31.349 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 19bdf76c-227a-442e-ab17-ef8cf55c9e0a for session 3c9f8cd0-7183-452b-9b6c-717090e80a74, question q2
+2025-08-01 19:58:31.349 | INFO     | domains.handler:process_response:235 - Processed response for session 3c9f8cd0-7183-452b-9b6c-717090e80a74
+2025-08-01 19:58:31.349 | INFO     | __main__:test_edge_cases:338 - Processing response 3/7
+2025-08-01 19:58:31.352 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:31.353 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:31.353 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:31.353 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:31.353 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:31.353 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:31.868 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q4
+2025-08-01 19:58:31.868 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q4
+2025-08-01 19:58:31.868 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q4
+2025-08-01 19:58:31.872 | INFO     | domains.recruitment.storage:store_response:210 - Stored response d5c98a2f-4a1b-417d-9cec-30524d4d88ae for session 3c9f8cd0-7183-452b-9b6c-717090e80a74, question q3
+2025-08-01 19:58:31.872 | INFO     | domains.handler:process_response:235 - Processed response for session 3c9f8cd0-7183-452b-9b6c-717090e80a74
+2025-08-01 19:58:31.872 | INFO     | __main__:test_edge_cases:338 - Processing response 4/7
+2025-08-01 19:58:31.875 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:31.875 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:31.875 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:31.876 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:31.876 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:31.876 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:32.391 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q5
+2025-08-01 19:58:32.391 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q5
+2025-08-01 19:58:32.391 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q5
+2025-08-01 19:58:32.395 | INFO     | domains.recruitment.storage:store_response:210 - Stored response dc875ce9-42c5-42f2-9272-d820c5594687 for session 3c9f8cd0-7183-452b-9b6c-717090e80a74, question q4
+2025-08-01 19:58:32.395 | INFO     | domains.handler:process_response:235 - Processed response for session 3c9f8cd0-7183-452b-9b6c-717090e80a74
+2025-08-01 19:58:32.395 | INFO     | __main__:test_edge_cases:338 - Processing response 5/7
+2025-08-01 19:58:32.401 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:32.401 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:32.401 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:32.401 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:32.401 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:32.401 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:32.915 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q6
+2025-08-01 19:58:32.915 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q6
+2025-08-01 19:58:32.915 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q6
+2025-08-01 19:58:32.919 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 47345cd3-080a-414f-8d19-ec1f11ffad90 for session 3c9f8cd0-7183-452b-9b6c-717090e80a74, question q5
+2025-08-01 19:58:32.920 | INFO     | domains.handler:process_response:235 - Processed response for session 3c9f8cd0-7183-452b-9b6c-717090e80a74
+2025-08-01 19:58:32.920 | INFO     | __main__:test_edge_cases:338 - Processing response 6/7
+2025-08-01 19:58:32.922 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:32.922 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:32.922 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:32.923 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:32.923 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:32.923 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:33.443 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:33.444 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:33.444 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:33.447 | INFO     | domains.recruitment.storage:store_response:210 - Stored response a04cd2ce-1924-4baf-94db-b6ee4f20a4cc for session 3c9f8cd0-7183-452b-9b6c-717090e80a74, question q6
+2025-08-01 19:58:33.447 | INFO     | domains.handler:process_response:235 - Processed response for session 3c9f8cd0-7183-452b-9b6c-717090e80a74
+2025-08-01 19:58:33.447 | INFO     | __main__:test_edge_cases:338 - Processing response 7/7
+2025-08-01 19:58:33.452 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:33.452 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:33.452 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:33.452 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:33.452 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:33.452 | INFO     | domains.recruitment.conversation:select_next_question:280 - Only one question left: q7
+2025-08-01 19:58:33.452 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:33.455 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 92adb883-f7c6-4cf7-b600-cd425278f7ec for session 3c9f8cd0-7183-452b-9b6c-717090e80a74, question q7
+2025-08-01 19:58:33.455 | INFO     | domains.handler:process_response:235 - Processed response for session 3c9f8cd0-7183-452b-9b6c-717090e80a74
+2025-08-01 19:58:33.455 | WARNING  | __main__:test_edge_cases:354 - Interview not completed for edge case: Special characters
+2025-08-01 19:58:33.455 | INFO     | __main__:test_edge_cases:324 - Testing edge case: Empty response
+2025-08-01 19:58:33.455 | INFO     | domains.recruitment.scenario_manager:select_random_scenario:89 - Randomly selected scenario: ecommerce_api_1 - E-commerce API Design
+2025-08-01 19:58:33.457 | INFO     | domains.recruitment.storage:create_session:132 - Created new session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b for scenario ecommerce_api_1
+2025-08-01 19:58:33.457 | INFO     | domains.recruitment.conversation:start_interview:83 - Started interview with scenario: ecommerce_api_1
+2025-08-01 19:58:33.458 | INFO     | domains.handler:start_interview_session:115 - Started interview session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b with scenario ecommerce_api_1
+2025-08-01 19:58:33.458 | INFO     | __main__:test_edge_cases:338 - Processing response 1/8
+2025-08-01 19:58:33.459 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:33.459 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:33.459 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:33.459 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:33.459 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:33.459 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:33.964 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q2
+2025-08-01 19:58:33.964 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q2
+2025-08-01 19:58:33.964 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q2
+2025-08-01 19:58:33.968 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 40d056e5-07d6-4b61-bd9d-626c20c67e5c for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b, question q1
+2025-08-01 19:58:33.968 | INFO     | domains.handler:process_response:235 - Processed response for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b
+2025-08-01 19:58:33.968 | INFO     | __main__:test_edge_cases:338 - Processing response 2/8
+2025-08-01 19:58:33.970 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:33.970 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:33.970 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:33.970 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:33.970 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:33.970 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:34.491 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q3
+2025-08-01 19:58:34.491 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q3
+2025-08-01 19:58:34.491 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q3
+2025-08-01 19:58:34.496 | INFO     | domains.recruitment.storage:store_response:210 - Stored response b6abcd93-4c5c-48a3-aab1-1602020d4998 for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b, question q2
+2025-08-01 19:58:34.496 | INFO     | domains.handler:process_response:235 - Processed response for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b
+2025-08-01 19:58:34.496 | INFO     | __main__:test_edge_cases:338 - Processing response 3/8
+2025-08-01 19:58:34.500 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:34.501 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:34.501 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:34.501 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:34.501 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:34.501 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:35.095 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q4
+2025-08-01 19:58:35.096 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q4
+2025-08-01 19:58:35.096 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q4
+2025-08-01 19:58:35.100 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 1ccdad7a-e930-42c3-ba83-8bff651a915c for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b, question q3
+2025-08-01 19:58:35.100 | INFO     | domains.handler:process_response:235 - Processed response for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b
+2025-08-01 19:58:35.101 | INFO     | __main__:test_edge_cases:338 - Processing response 4/8
+2025-08-01 19:58:35.104 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:35.104 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:35.104 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:35.104 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:35.105 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:35.105 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:35.555 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:35.556 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:35.556 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:35.561 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 5d898b8c-2eae-42cf-a299-5472f518a2b8 for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b, question q4
+2025-08-01 19:58:35.561 | INFO     | domains.handler:process_response:235 - Processed response for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b
+2025-08-01 19:58:35.561 | INFO     | __main__:test_edge_cases:338 - Processing response 5/8
+2025-08-01 19:58:35.563 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:35.563 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:35.563 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:35.563 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:35.563 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:35.563 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:36.587 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:36.587 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:36.588 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:36.592 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 819f6f38-e8a2-41b8-b073-b8ec110b53de for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b, question q5
+2025-08-01 19:58:36.592 | INFO     | domains.handler:process_response:235 - Processed response for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b
+2025-08-01 19:58:36.592 | INFO     | __main__:test_edge_cases:338 - Processing response 6/8
+2025-08-01 19:58:36.596 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:36.596 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:36.596 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:36.596 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:36.597 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:36.597 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:37.110 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:37.110 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:37.110 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:37.114 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 21891820-5efb-4762-89d7-1a0d1c1b9e58 for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b, question q6
+2025-08-01 19:58:37.114 | INFO     | domains.handler:process_response:235 - Processed response for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b
+2025-08-01 19:58:37.114 | INFO     | __main__:test_edge_cases:338 - Processing response 7/8
+2025-08-01 19:58:37.120 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:37.120 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:37.120 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:37.120 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:37.120 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:37.120 | INFO     | domains.recruitment.conversation:select_next_question:280 - Only one question left: q7
+2025-08-01 19:58:37.121 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:37.123 | INFO     | domains.recruitment.storage:store_response:210 - Stored response dd55073b-f673-42d7-9757-d20ed7eed3be for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b, question q7
+2025-08-01 19:58:37.124 | INFO     | domains.handler:process_response:235 - Processed response for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b
+2025-08-01 19:58:37.124 | INFO     | __main__:test_edge_cases:338 - Processing response 8/8
+2025-08-01 19:58:37.126 | INFO     | domains.handler:process_response:184 - All questions have been asked for session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b
+2025-08-01 19:58:37.129 | INFO     | domains.recruitment.storage:update_session_status:167 - Updated session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b status to completed
+2025-08-01 19:58:37.263 | INFO     | domains.recruitment.tools:decorator:31 - Registered tool: summarize_interview_history
+2025-08-01 19:58:37.263 | INFO     | domains.recruitment.tools:decorator:31 - Registered tool: grammar_check
+2025-08-01 19:58:37.263 | INFO     | domains.recruitment.tools:decorator:31 - Registered tool: validation_tool
+2025-08-01 19:58:37.263 | INFO     | domains.recruitment.tools:decorator:31 - Registered tool: technical_accuracy_check
+2025-08-01 19:58:37.263 | INFO     | domains.recruitment.tools:initialize_tools:298 - Initialized 4 tools: summarize_interview_history, grammar_check, validation_tool, technical_accuracy_check
+2025-08-01 19:58:37.263 | ERROR    | domains.handler:complete_interview:321 - Error completing interview: cannot import name 'ScenarioManager' from 'domains.recruitment.scenario_manager' (/Users/mohitverma/Downloads/recruitment_bot/domains/recruitment/scenario_manager.py)
+2025-08-01 19:58:37.266 | INFO     | domains.recruitment.storage:update_session_status:167 - Updated session feb6eea8-7740-4dba-a542-5a0ec5cd4a1b status to error
+2025-08-01 19:58:37.266 | ERROR    | __main__:test_edge_cases:342 - Error processing response 8 for Empty response: Failed to complete interview: cannot import name 'ScenarioManager' from 'domains.recruitment.scenario_manager' (/Users/mohitverma/Downloads/recruitment_bot/domains/recruitment/scenario_manager.py)
+2025-08-01 19:58:37.266 | INFO     | __main__:test_edge_cases:361 - Edge case results: {'Short responses': False, 'Long response': False, 'Code response': False, 'Foreign language': False, 'Special characters': False, 'Empty response': False}
+2025-08-01 19:58:37.266 | INFO     | __main__:test_error_handling:366 - Testing error handling
+2025-08-01 19:58:37.266 | INFO     | __main__:test_error_handling:377 - Running error test: Invalid session ID
+2025-08-01 19:58:37.267 | WARNING  | domains.recruitment.storage:get_session:325 - Session invalid_session_id not found
+2025-08-01 19:58:37.267 | ERROR    | domains.handler:process_response:140 - Session invalid_session_id not found
+2025-08-01 19:58:37.267 | INFO     | __main__:test_error_handling:384 - Error test Invalid session ID passed: Session invalid_session_id not found
+2025-08-01 19:58:37.267 | INFO     | __main__:test_error_handling:377 - Running error test: Invalid scenario ID
+2025-08-01 19:58:37.267 | WARNING  | domains.recruitment.scenario_manager:get_scenario_by_id:74 - Scenario with ID invalid_scenario_id not found
+2025-08-01 19:58:37.267 | ERROR    | domains.handler:start_interview_session:83 - Scenario with ID invalid_scenario_id not found
+2025-08-01 19:58:37.267 | INFO     | __main__:test_error_handling:384 - Error test Invalid scenario ID passed: Scenario with ID invalid_scenario_id not found
+2025-08-01 19:58:37.267 | INFO     | __main__:test_error_handling:377 - Running error test: Get info for non-existent session
+2025-08-01 19:58:37.268 | WARNING  | domains.recruitment.storage:get_session:325 - Session non_existent_session not found
+2025-08-01 19:58:37.268 | WARNING  | domains.recruitment.storage:get_complete_session_data:548 - Session non_existent_session not found
+2025-08-01 19:58:37.268 | ERROR    | domains.handler:get_session_info:340 - Session non_existent_session not found
+2025-08-01 19:58:37.268 | ERROR    | __main__:test_error_handling:391 - Unexpected exception in error test Get info for non-existent session: object dict can't be used in 'await' expression
+2025-08-01 19:58:37.268 | INFO     | __main__:test_error_handling:394 - Error handling test results: {'Invalid session ID': True, 'Invalid scenario ID': True, 'Get info for non-existent session': False}
+2025-08-01 19:58:37.268 | INFO     | __main__:test_concurrent_interviews:399 - Testing concurrent interviews
+2025-08-01 19:58:37.268 | INFO     | __main__:test_concurrent_interviews:404 - Setting up concurrent interview 1
+2025-08-01 19:58:37.268 | INFO     | __main__:test_concurrent_interviews:404 - Setting up concurrent interview 2
+2025-08-01 19:58:37.268 | INFO     | __main__:test_concurrent_interviews:404 - Setting up concurrent interview 3
+2025-08-01 19:58:37.268 | INFO     | domains.recruitment.scenario_manager:select_random_scenario:89 - Randomly selected scenario: devops_cicd_4 - CI/CD Pipeline for a Microservices Architecture
+2025-08-01 19:58:37.270 | INFO     | domains.recruitment.storage:create_session:132 - Created new session cd72caaa-f62b-40d1-8474-98e3707cce00 for scenario devops_cicd_4
+2025-08-01 19:58:37.270 | INFO     | domains.recruitment.conversation:start_interview:83 - Started interview with scenario: devops_cicd_4
+2025-08-01 19:58:37.270 | INFO     | domains.handler:start_interview_session:115 - Started interview session cd72caaa-f62b-40d1-8474-98e3707cce00 with scenario devops_cicd_4
+2025-08-01 19:58:37.271 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:37.272 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:37.272 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:37.272 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:37.272 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:37.272 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:37.272 | INFO     | domains.recruitment.scenario_manager:select_random_scenario:89 - Randomly selected scenario: cybersecurity_api_7 - API Security and Threat Mitigation
+2025-08-01 19:58:37.274 | INFO     | domains.recruitment.storage:create_session:132 - Created new session 3d805298-ec5d-43e7-aefa-c3acd5b584aa for scenario cybersecurity_api_7
+2025-08-01 19:58:37.274 | INFO     | domains.recruitment.conversation:start_interview:83 - Started interview with scenario: cybersecurity_api_7
+2025-08-01 19:58:37.274 | INFO     | domains.handler:start_interview_session:115 - Started interview session 3d805298-ec5d-43e7-aefa-c3acd5b584aa with scenario cybersecurity_api_7
+2025-08-01 19:58:37.276 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:37.276 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:37.276 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:37.276 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:37.276 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:37.276 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:37.276 | INFO     | domains.recruitment.scenario_manager:select_random_scenario:89 - Randomly selected scenario: cloud_infra_6 - Cloud Infrastructure Automation with Terraform
+2025-08-01 19:58:37.279 | INFO     | domains.recruitment.storage:create_session:132 - Created new session 3dc28d4d-f4eb-422b-9126-b74b195a66f0 for scenario cloud_infra_6
+2025-08-01 19:58:37.279 | INFO     | domains.recruitment.conversation:start_interview:83 - Started interview with scenario: cloud_infra_6
+2025-08-01 19:58:37.279 | INFO     | domains.handler:start_interview_session:115 - Started interview session 3dc28d4d-f4eb-422b-9126-b74b195a66f0 with scenario cloud_infra_6
+2025-08-01 19:58:37.280 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:37.281 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:37.281 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:37.281 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:37.281 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:37.281 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:37.718 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q2
+2025-08-01 19:58:37.718 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q2
+2025-08-01 19:58:37.718 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q2
+2025-08-01 19:58:37.721 | INFO     | domains.recruitment.storage:store_response:210 - Stored response fe971c8d-b482-4e5d-8856-125f4e76b088 for session cd72caaa-f62b-40d1-8474-98e3707cce00, question q1
+2025-08-01 19:58:37.721 | INFO     | domains.handler:process_response:235 - Processed response for session cd72caaa-f62b-40d1-8474-98e3707cce00
+2025-08-01 19:58:37.722 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:37.722 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:37.722 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:37.722 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:37.722 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:37.722 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:38.158 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q3
+2025-08-01 19:58:38.159 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q3
+2025-08-01 19:58:38.159 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q3
+2025-08-01 19:58:38.163 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 3bf45232-319d-4e35-8190-d35f821bb79e for session cd72caaa-f62b-40d1-8474-98e3707cce00, question q2
+2025-08-01 19:58:38.163 | INFO     | domains.handler:process_response:235 - Processed response for session cd72caaa-f62b-40d1-8474-98e3707cce00
+2025-08-01 19:58:38.170 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:38.170 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:38.170 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:38.170 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:38.170 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:38.170 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:38.357 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q2
+2025-08-01 19:58:38.357 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q2
+2025-08-01 19:58:38.357 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q2
+2025-08-01 19:58:38.360 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 917d9db6-6380-40ea-b60d-4f4cc3fd043e for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0, question q1
+2025-08-01 19:58:38.361 | INFO     | domains.handler:process_response:235 - Processed response for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0
+2025-08-01 19:58:38.363 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:38.363 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:38.363 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:38.363 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:38.363 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:38.363 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:38.367 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q2
+2025-08-01 19:58:38.367 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q2
+2025-08-01 19:58:38.368 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q2
+2025-08-01 19:58:38.371 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 14b74ff3-6f9f-4340-bcd2-de81f4e1cfd6 for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa, question q1
+2025-08-01 19:58:38.371 | INFO     | domains.handler:process_response:235 - Processed response for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa
+2025-08-01 19:58:38.372 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:38.372 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:38.372 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:38.373 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:38.373 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:38.373 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:38.689 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q4
+2025-08-01 19:58:38.689 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q4
+2025-08-01 19:58:38.690 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q4
+2025-08-01 19:58:38.693 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 98c72734-a72e-402e-8c4a-b26d30b223af for session cd72caaa-f62b-40d1-8474-98e3707cce00, question q3
+2025-08-01 19:58:38.694 | INFO     | domains.handler:process_response:235 - Processed response for session cd72caaa-f62b-40d1-8474-98e3707cce00
+2025-08-01 19:58:38.695 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:38.696 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:38.696 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:38.696 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:38.696 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:38.696 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:38.789 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q3
+2025-08-01 19:58:38.789 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q3
+2025-08-01 19:58:38.789 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q3
+2025-08-01 19:58:38.792 | INFO     | domains.recruitment.storage:store_response:210 - Stored response b0dae279-7739-41dc-9de3-c38744c7e22b for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa, question q2
+2025-08-01 19:58:38.792 | INFO     | domains.handler:process_response:235 - Processed response for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa
+2025-08-01 19:58:38.794 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:38.794 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:38.794 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:38.794 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:38.794 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:38.794 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:39.210 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q3
+2025-08-01 19:58:39.210 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q3
+2025-08-01 19:58:39.210 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q3
+2025-08-01 19:58:39.214 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 759cc1b6-e475-4ac1-b96a-ff016d40086e for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0, question q2
+2025-08-01 19:58:39.215 | INFO     | domains.handler:process_response:235 - Processed response for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0
+2025-08-01 19:58:39.218 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:39.219 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.219 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:39.219 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.219 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:39.219 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:39.238 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q5
+2025-08-01 19:58:39.238 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q5
+2025-08-01 19:58:39.238 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q5
+2025-08-01 19:58:39.242 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 27a7a93d-7135-47cc-b33c-1a0f0d709fa9 for session cd72caaa-f62b-40d1-8474-98e3707cce00, question q4
+2025-08-01 19:58:39.242 | INFO     | domains.handler:process_response:235 - Processed response for session cd72caaa-f62b-40d1-8474-98e3707cce00
+2025-08-01 19:58:39.244 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:39.244 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.244 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:39.244 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.244 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:39.244 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:39.272 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q4
+2025-08-01 19:58:39.272 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q4
+2025-08-01 19:58:39.272 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q4
+2025-08-01 19:58:39.275 | INFO     | domains.recruitment.storage:store_response:210 - Stored response a6c422c4-f600-4e32-8f54-ad7c5939170c for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa, question q3
+2025-08-01 19:58:39.275 | INFO     | domains.handler:process_response:235 - Processed response for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa
+2025-08-01 19:58:39.277 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:39.277 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.277 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:39.277 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.277 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:39.277 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:39.731 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q4
+2025-08-01 19:58:39.732 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q4
+2025-08-01 19:58:39.732 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q4
+2025-08-01 19:58:39.736 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 763efcaf-b605-4e48-880b-ba2d2623f98f for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0, question q3
+2025-08-01 19:58:39.736 | INFO     | domains.handler:process_response:235 - Processed response for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0
+2025-08-01 19:58:39.738 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:39.738 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.738 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:39.738 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.738 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:39.738 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:39.757 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q6
+2025-08-01 19:58:39.757 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q6
+2025-08-01 19:58:39.757 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q6
+2025-08-01 19:58:39.760 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 75c43aa7-03b1-4915-90e8-2bee054db53c for session cd72caaa-f62b-40d1-8474-98e3707cce00, question q5
+2025-08-01 19:58:39.760 | INFO     | domains.handler:process_response:235 - Processed response for session cd72caaa-f62b-40d1-8474-98e3707cce00
+2025-08-01 19:58:39.762 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:39.762 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.762 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:39.762 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.762 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:39.762 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:39.780 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q5
+2025-08-01 19:58:39.781 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q5
+2025-08-01 19:58:39.781 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q5
+2025-08-01 19:58:39.784 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 72f40dae-acdb-4c15-a24e-a2c42a16c253 for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa, question q4
+2025-08-01 19:58:39.784 | INFO     | domains.handler:process_response:235 - Processed response for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa
+2025-08-01 19:58:39.786 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:39.786 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.786 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:39.786 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:39.786 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:39.786 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:40.272 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:40.272 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:40.272 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:40.277 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 95a0e4e3-07f0-41cb-8058-8cf4353e3c89 for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0, question q4
+2025-08-01 19:58:40.277 | INFO     | domains.handler:process_response:235 - Processed response for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0
+2025-08-01 19:58:40.287 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:40.297 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:40.297 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:40.297 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:40.297 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:40.298 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:40.300 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q6
+2025-08-01 19:58:40.300 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q6
+2025-08-01 19:58:40.300 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q6
+2025-08-01 19:58:40.302 | INFO     | domains.recruitment.storage:store_response:210 - Stored response a0d993a8-3e30-4c59-9b69-7a4dbd4c7c4e for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa, question q5
+2025-08-01 19:58:40.302 | INFO     | domains.handler:process_response:235 - Processed response for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa
+2025-08-01 19:58:40.303 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:40.303 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:40.303 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:40.303 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:40.303 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:40.303 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:40.304 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:40.304 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:40.304 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:40.307 | INFO     | domains.recruitment.storage:store_response:210 - Stored response f6d487c2-2848-4a97-a576-87d70c03a0d8 for session cd72caaa-f62b-40d1-8474-98e3707cce00, question q6
+2025-08-01 19:58:40.307 | INFO     | domains.handler:process_response:235 - Processed response for session cd72caaa-f62b-40d1-8474-98e3707cce00
+2025-08-01 19:58:40.309 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:40.309 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:40.309 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:40.309 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:40.309 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:40.309 | INFO     | domains.recruitment.conversation:select_next_question:280 - Only one question left: q7
+2025-08-01 19:58:40.309 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:40.312 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 06aaf7a8-d612-4f15-870c-a26c44b1417c for session cd72caaa-f62b-40d1-8474-98e3707cce00, question q7
+2025-08-01 19:58:40.312 | INFO     | domains.handler:process_response:235 - Processed response for session cd72caaa-f62b-40d1-8474-98e3707cce00
+2025-08-01 19:58:40.312 | WARNING  | domains.handler:run_single_interview:494 - Interview cd72caaa-f62b-40d1-8474-98e3707cce00 not completed with provided responses
+2025-08-01 19:58:40.851 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:40.851 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:40.851 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:40.856 | INFO     | domains.recruitment.storage:store_response:210 - Stored response cd5cb44b-e5fa-4359-9975-91e5dc9e85b0 for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa, question q6
+2025-08-01 19:58:40.856 | INFO     | domains.handler:process_response:235 - Processed response for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa
+2025-08-01 19:58:40.859 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:40.859 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:40.859 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:40.859 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:40.859 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:40.859 | INFO     | domains.recruitment.conversation:select_next_question:280 - Only one question left: q7
+2025-08-01 19:58:40.859 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:40.862 | INFO     | domains.recruitment.storage:store_response:210 - Stored response ade2b9c1-7da1-402e-9487-c9d60619cef5 for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa, question q7
+2025-08-01 19:58:40.862 | INFO     | domains.handler:process_response:235 - Processed response for session 3d805298-ec5d-43e7-aefa-c3acd5b584aa
+2025-08-01 19:58:40.862 | WARNING  | domains.handler:run_single_interview:494 - Interview 3d805298-ec5d-43e7-aefa-c3acd5b584aa not completed with provided responses
+2025-08-01 19:58:40.959 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q6
+2025-08-01 19:58:40.959 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q6
+2025-08-01 19:58:40.959 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q6
+2025-08-01 19:58:40.963 | INFO     | domains.recruitment.storage:store_response:210 - Stored response 24424fa6-1b2d-4009-8888-24b71abc2896 for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0, question q5
+2025-08-01 19:58:40.963 | INFO     | domains.handler:process_response:235 - Processed response for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0
+2025-08-01 19:58:40.965 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:40.965 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:40.965 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:40.965 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:40.965 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:40.966 | INFO     | domains.recruitment.conversation:select_next_question:304 - Using LLM to select next question
+2025-08-01 19:58:41.453 | INFO     | domains.recruitment.conversation:select_next_question:317 - LLM selected question ID: q7
+2025-08-01 19:58:41.453 | INFO     | domains.recruitment.conversation:select_next_question:322 - Found matching question for ID q7
+2025-08-01 19:58:41.453 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:41.457 | INFO     | domains.recruitment.storage:store_response:210 - Stored response ddf597d0-c552-47aa-802b-eabd00c03043 for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0, question q6
+2025-08-01 19:58:41.457 | INFO     | domains.handler:process_response:235 - Processed response for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0
+2025-08-01 19:58:41.461 | INFO     | domains.recruitment.conversation:process_response:122 - Checking if clarification is needed for response
+2025-08-01 19:58:41.461 | ERROR    | domains.recruitment.conversation:process_response:141 - Error in clarification check: type object 'ClarificationResponse' has no attribute 'model_json_schema'
+2025-08-01 19:58:41.461 | INFO     | domains.recruitment.conversation:process_response:149 - Analyzing candidate response
+2025-08-01 19:58:41.462 | ERROR    | domains.recruitment.conversation:process_response:168 - Error in response analysis: type object 'ResponseAnalysis' has no attribute 'model_json_schema'
+2025-08-01 19:58:41.462 | INFO     | domains.recruitment.conversation:process_response:200 - Selecting next question
+2025-08-01 19:58:41.462 | INFO     | domains.recruitment.conversation:select_next_question:280 - Only one question left: q7
+2025-08-01 19:58:41.462 | INFO     | domains.recruitment.conversation:process_response:210 - Selected next question: q7
+2025-08-01 19:58:41.464 | INFO     | domains.recruitment.storage:store_response:210 - Stored response bb7e891c-7f82-4677-bf94-7500608e6da0 for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0, question q7
+2025-08-01 19:58:41.464 | INFO     | domains.handler:process_response:235 - Processed response for session 3dc28d4d-f4eb-422b-9126-b74b195a66f0
+2025-08-01 19:58:41.464 | WARNING  | domains.handler:run_single_interview:494 - Interview 3dc28d4d-f4eb-422b-9126-b74b195a66f0 not completed with provided responses
+2025-08-01 19:58:41.465 | INFO     | __main__:test_concurrent_interviews:415 - Concurrent interview 1 completed successfully
+2025-08-01 19:58:41.465 | INFO     | __main__:test_concurrent_interviews:415 - Concurrent interview 2 completed successfully
+2025-08-01 19:58:41.465 | INFO     | __main__:test_concurrent_interviews:415 - Concurrent interview 3 completed successfully
+2025-08-01 19:58:41.465 | INFO     | __main__:test_concurrent_interviews:420 - Concurrent interviews: 3/3 successful
+2025-08-01 19:58:41.465 | INFO     | __main__:main:448 - Test Results:
+2025-08-01 19:58:41.465 | INFO     | __main__:main:449 - Basic Flow: FAILED
+2025-08-01 19:58:41.465 | INFO     | __main__:main:453 - Edge Cases: 0/6 passed
+2025-08-01 19:58:41.465 | INFO     | __main__:main:457 - Error Handling: 2/3 passed
+2025-08-01 19:58:41.465 | INFO     | __main__:main:459 - Concurrent Interviews: PASSED
+2025-08-01 19:58:41.465 | INFO     | __main__:main:469 - Overall Test Result: FAILED
